@@ -1,0 +1,17 @@
+navigation: 
+  - url: '#services'
+    title: Services
+  - url: '#about'
+    title: About
+  - url: '#gallery'
+    title: Gallery
+  - url: '#contact'
+    title: Contact
+
+features:
+  - title: Customized Menus
+  - title: Mindful Cooking
+  - title: Personal Chef
+  - title: Artistic Presentation
+  - title: Dietary Expertise
+  - title: Ayurvedic Fusion

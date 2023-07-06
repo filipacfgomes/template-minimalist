@@ -1,0 +1,7 @@
+<section class="grid grid-cols-3 md:grid-cols-6 text-center gap-[1px] bg-dark items-stretch">
+    {% for item in site.data.site-settings.features limit:6 %}
+    <div class="py-2 bg-sand">
+        {{item.title}}
+    </div>
+    {% endfor %}
+</section>

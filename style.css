@@ -1,0 +1,88 @@
+/* ----------- Import Tailwind -----*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ----------- Default Styles to apply to the whole project  --------- */
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    nav a {
+        @apply uppercase text-feature
+    }
+
+    .heading-lg {
+        @apply text-7xl
+    }
+
+    .heading-lg-mobile {
+        @apply text-6xl font-sans uppercase mb-4 tracking-wider leading-[1.2em] mx-5p
+    }
+
+    .heading-md {
+        @apply text-2xl uppercase mb-4
+    }
+
+    .heading-sm {
+        @apply uppercase mb-4 font-semibold
+    }
+
+    .subtitle {
+        @apply text-xl
+    }
+
+    .subtitle-mobile {
+        @apply text-lg font-sans tracking-wide mx-5p leading-[1.2em]
+    }
+
+}
+
+
+/* ----------- ADDITIONAL COMPONENTS  --------- */
+
+@layer components {
+
+    .logo {
+        @apply flex justify-center items-center text-lg text-center
+    }
+
+    .bg-image-style {
+        @apply bg-cover bg-no-repeat bg-center
+    }
+
+    .pulse-icon {
+        @apply
+    }
+
+    .button {
+        @apply border border-black px-10 py-2 text-center inline-block uppercase
+    }
+
+    .button:hover {
+        @apply border-feature text-feature transition-[0.5s]
+    }
+
+}
+
+/* JS
+.pulse-animation {
+    animation: pulse 1s ease-in-out infinite alternate;
+}
+
+.pulse-animation:hover { */
+    /* animation-play-state: paused; */
+    /* @apply bg-white duration-1000
+}
+
+@keyframes pulse {
+    from {
+      scale: .9;
+    }
+    to { 
+      scale: 1.1;
+    }
+  } */

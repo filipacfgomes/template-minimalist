@@ -1,0 +1,10 @@
+<section class="p-10p" id="services">
+    <h2 class="heading-md">{{page.services-section.heading}}</h2>
+    <div class="text-center grid grid-cols-1 md:grid-cols-3 gap-4">
+        {% for item in site.services limit:3 %}
+        <div>
+            {% include service-loop-item-square.html %}
+        </div>
+        {% endfor %}
+    </div>
+</section>

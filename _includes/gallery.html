@@ -1,0 +1,12 @@
+<section class="p-10p text-center border-t border-black" id="gallery">
+    <h2 class="heading-md">{{page.gallery-section.heading}}</h2>
+    <p class="mb-8">{{page.gallery-section.description}}</p>
+    <div class="grid md:grid-cols-3 gap-4 mb-20">
+        {% for item in page.gallery-section.gallery %}
+        <div class="bg-image-style aspect-square" style="background-image: url('{{item.image_path}}');"></div>
+        {% endfor %}
+    </div>
+    <a href="#">
+        <div class="button">Schedule a Complimentary Consultation</div>
+    </a>
+</section>

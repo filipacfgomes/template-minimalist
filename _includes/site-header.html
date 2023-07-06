@@ -1,0 +1,24 @@
+<header
+    style="background-image: url('{{page.banner.image.image_path}}'); background-position: {{page.banner.image.image_focus}};"
+    class="flex flex-col justify-items-stretch min-h-screen bg-image-style text-white">
+    <nav class="hidden sm:hidden md:flex justify-between py-8 border-b border-feature">
+        <div>
+            {% for item in site.data.site-settings.navigation limit:2 %}
+            <a href="{{item.url}}" class="py-1 px-8 lg:px-16">{{item.title}}</a>
+            {% endfor %}
+        </div>
+        <div class="logo">AYURVEDIC ALCHEMY</div>
+        <div">
+            {% for item in site.data.site-settings.navigation limit:2 offset:2 %}
+            <a href="{{item.url}}" class="py-1 px-8 lg:px-16">{{item.title}}</a>
+            {% endfor %}
+        </div>
+    </nav>
+    <div class="text-center flex-grow flex flex-col justify-center items-center">
+        <!-- <hr class="mb-12 w-28 border-t-1"> -->
+        <h1 class="heading-lg-mobile sm:heading-lg">{{page.banner.heading}}</h1>
+        <h2 class="subtitle-mobile sm:subtitle">{{page.banner.subheading}}</h2>
+    </div>
+    <!-- Pulse Icon -->
+    <!-- <a href="#services"><div class="w-10 h-10 navpoint bg-transparent border border-white absolute inline-block rounded-full bottom-8 right-[49%] pulse-animation"></div></a> -->
+</header>

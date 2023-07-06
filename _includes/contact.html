@@ -1,0 +1,8 @@
+<section class="border border-black grid md:grid-cols-10">
+    <div style="background-image: url('{{page.contact-section.image.image_path}}'); background-position: {{page.contact-section.image.image_focus}}"
+        class="md:col-span-4 border-x border-black border-b h-40 md:h-full md:border-b-0 bg-image-style" id="contact"></div>
+    <div class="md:col-span-6 p-10p">
+        <h2 class="heading-md">{{page.contact-section.heading}}</h2>
+        {% include form.html %}
+    </div>
+</section>

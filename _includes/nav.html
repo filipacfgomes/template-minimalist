@@ -1,0 +1,13 @@
+<nav class="hidden sm:hidden md:flex justify-between py-8">
+    <div>
+        {% for item in site.data.site-settings.navigation limit:2 %}
+        <a href="{{item.url}}" class="py-1 px-8 lg:px-16">{{item.title}}</a>
+        {% endfor %}
+    </div>
+    <div class="logo">VK</div>
+    <div">
+        {% for item in site.data.site-settings.navigation limit:2 offset:2 %}
+        <a href="{{item.url}}" class="py-1 px-8 lg:px-16">{{item.title}}</a>
+        {% endfor %}
+    </div>
+</nav>
