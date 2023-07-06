@@ -533,9 +533,6 @@ nav a {
 .col-span-9 {
   grid-column: span 9 / span 9;
 }
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
 .m-\[10vh\] {
   margin: 10vh;
 }
@@ -588,11 +585,11 @@ nav a {
 .h-40 {
   height: 10rem;
 }
-.h-\[60vh\] {
-  height: 60vh;
-}
 .h-\[40vh\] {
   height: 40vh;
+}
+.h-\[60vh\] {
+  height: 60vh;
 }
 .min-h-70 {
   min-height: 70vh;
@@ -819,9 +816,6 @@ nav a {
   }
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .sm\:text-left {
     text-align: left;
